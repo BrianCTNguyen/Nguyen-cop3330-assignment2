@@ -37,9 +37,9 @@ public class Solution32 {
         while (userGuess != num) {
             userGuess = in.nextInt();
 
-            if (userGuess < num)
+            if (userGuess > num)
                 System.out.println("Too high, guess again: ");
-            else if (userGuess > num)
+            else if (userGuess < num)
                 System.out.println("Too low, guess again: ");
         }
         System.out.println("You got it!");
